@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Juste prix</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+      <h1 class="text-center text-uppercase">Le juste prix</h1>
+      <main
+        class="bg-warning-subtle w-50 mx-auto rounded-2 pb-3 d-flex flex-column align-items-center"
+      >
+        <section class="d-flex flex-column align-items-center p-2">
+          <img id="image" src="" alt="Objet à trouver" title=""/>
+          <div id="nom-image" class="text-uppercase text-center"></div>
+        </section>
+        <section class="d-flex flex-column w-50 mt-1 p-3">
+          <label for="prix" class="form-label text-center">
+            Trouver le prix de l'objet:
+            <br />
+            (entre 1 et 100€)
+          </label>
+          <input type="text" class="form-control" id="prix" />
+          <div id="nb-tentative" class="text-center"></div>
+          <div id="message" class="text-center fw-bold pt-2"></div>
+        </section>
+        <dix class="d-flex flex-wrap justify-content-center gap-2">
+          <button type="submit" id="bouton" class="btn btn-info fw-bold">
+            Valider
+          </button>
+          <button type="reset" id="btn-reset" class="btn btn-warning fw-bold">
+            Réinitialiser
+          </button>
+        </dix>
+      </main>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="fonctions.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
